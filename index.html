@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#13251d" />
+  <title>台钓网页游戏 v0.1.0</title>
+  <link rel="stylesheet" href="./tai_fishing_game_v0.1.0.css" />
+</head>
+<body>
+  <main id="game-shell" data-state="BOOT">
+    <canvas id="render-canvas" aria-label="台钓三维游戏画面"></canvas>
+
+    <section id="loading-screen" class="screen-layer visible" aria-live="polite">
+      <div class="dialog-card loading-card">
+        <h1>台钓网页游戏</h1>
+        <p>正在搭建钓场……</p>
+        <div class="loading-track"><span id="loading-progress"></span></div>
+        <small>v0.1.0 · 核心玩法原型</small>
+      </div>
+    </section>
+
+    <header class="top-hud hud-panel">
+      <div class="top-left">
+        <strong>青竹混养池</strong>
+        <span id="spot-label">3号钓位</span>
+        <span>晴 · 微风</span>
+      </div>
+      <div class="top-right">
+        <span id="game-state-label">准备钓鱼</span>
+        <span class="version-badge">v0.1.0</span>
+      </div>
+    </header>
+
+    <aside class="metrics-panel hud-panel" aria-label="钓鱼参数">
+      <div><span>落点</span><strong id="distance-label">—</strong></div>
+      <div><span>水深</span><strong id="water-depth-label">2.40 m</strong></div>
+      <div><span>钓深</span><strong id="fishing-depth-label">2.20 m</strong></div>
+      <div><span>状态</span><strong id="depth-state-label">离底 20 cm</strong></div>
+      <div><span>饵料</span><strong id="bait-label">蚯蚓</strong></div>
+    </aside>
+
+    <aside class="float-monitor hud-panel" aria-label="浮漂观察窗口">
+      <div class="monitor-title">
+        <span>浮漂特写</span>
+        <button id="focus-float-button" type="button" class="icon-button" title="镜头看向浮漂">◎</button>
+      </div>
+      <div class="monitor-waterline"></div>
+      <div id="monitor-float" class="monitor-float">
+        <span class="float-tip"></span>
+        <span class="float-body"></span>
+      </div>
+      <small id="bite-hint">等待抛竿</small>
+    </aside>
+
+    <section class="movement-panel" aria-label="移动控制">
+      <button type="button" data-move="forward" aria-label="前进">▲</button>
+      <div>
+        <button type="button" data-move="left" aria-label="向左">◀</button>
+        <button type="button" data-move="back" aria-label="后退">▼</button>
+        <button type="button" data-move="right" aria-label="向右">▶</button>
+      </div>
+      <small>收竿后可移动</small>
+    </section>
+
+    <section class="action-panel" aria-label="主要操作">
+      <button id="primary-action" type="button" class="primary-action">抛竿</button>
+      <div class="secondary-actions">
+        <button id="rig-button" type="button">调漂</button>
+        <button id="bait-button" type="button">换饵</button>
+        <button id="retrieve-button" type="button">收竿</button>
+      </div>
+      <button id="test-bite-button" type="button" class="developer-button" disabled>测试鱼口</button>
+    </section>
+
+    <section id="cast-hud" class="cast-hud hud-panel hidden" aria-label="抛竿控制">
+      <div class="cast-row">
+        <span>抛竿力度</span>
+        <strong id="cast-power-label">0%</strong>
+      </div>
+      <div class="power-track"><span id="cast-power-bar"></span></div>
+      <div class="cast-row small">
+        <span>预计落点</span>
+        <strong id="cast-distance-preview">3.5 m</strong>
+      </div>
+      <p>按住“抛竿”蓄力，松开完成抛投；转动镜头调整方向。</p>
+    </section>
+
+    <section id="fight-hud" class="fight-hud hud-panel hidden" aria-label="遛鱼控制">
+      <div class="fight-meter">
+        <div><span>鱼线张力</span><strong id="tension-label">36%</strong></div>
+        <div class="meter-track"><span id="tension-bar"></span></div>
+      </div>
+      <div class="fight-meter">
+        <div><span>鱼体力</span><strong id="stamina-label">100%</strong></div>
+        <div class="meter-track"><span id="stamina-bar"></span></div>
+      </div>
+      <div class="fight-info">
+        <span>距离岸边</span><strong id="fish-distance-label">7.0 m</strong>
+      </div>
+      <div class="fight-buttons">
+        <button type="button" data-fight="left">向左控鱼</button>
+        <button type="button" data-fight="lift">抬竿施压</button>
+        <button type="button" data-fight="lower">顺势卸力</button>
+        <button id="net-button" type="button" disabled>使用抄网</button>
+      </div>
+    </section>
+
+    <section id="rig-dialog" class="screen-layer" aria-label="调漂界面">
+      <div class="dialog-card rig-card">
+        <div class="dialog-heading">
+          <div>
+            <h2>调漂与线组</h2>
+            <p>上下移动浮漂，改变鱼钩所在水层。</p>
+          </div>
+          <button type="button" data-close-dialog="rig-dialog" class="close-button">×</button>
+        </div>
+
+        <div class="rig-layout">
+          <div class="rig-controls">
+            <label for="depth-range">钓深 <strong id="dialog-depth-label">2.20 m</strong></label>
+            <input id="depth-range" type="range" min="0.30" max="2.80" step="0.01" value="2.20" />
+            <div class="step-buttons">
+              <button type="button" data-depth-step="-0.05">-5 cm</button>
+              <button type="button" data-depth-step="-0.01">-1 cm</button>
+              <button type="button" data-depth-step="0.01">+1 cm</button>
+              <button type="button" data-depth-step="0.05">+5 cm</button>
+            </div>
+            <div class="form-row">
+              <label for="hook-size">鱼钩</label>
+              <select id="hook-size">
+                <option value="3">袖钩 3号</option>
+                <option value="5" selected>袖钩 5号</option>
+                <option value="7">伊势尼 7号</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="leader-length">子线长度</label>
+              <select id="leader-length">
+                <option value="0.15">15 cm</option>
+                <option value="0.25" selected>25 cm</option>
+                <option value="0.40">40 cm</option>
+              </select>
+            </div>
+            <div class="rig-result">
+              <span>线组判断</span>
+              <strong id="dialog-depth-state">离底 20 cm</strong>
+            </div>
+          </div>
+
+          <div class="depth-diagram" aria-label="水深与钩饵位置示意">
+            <span class="surface-label">水面</span>
+            <div class="diagram-water"></div>
+            <div id="diagram-float" class="diagram-float"></div>
+            <div id="diagram-hook" class="diagram-hook">J</div>
+            <span class="bottom-label">水底 2.40 m</span>
+          </div>
+        </div>
+
+        <div class="dialog-footer">
+          <button type="button" data-close-dialog="rig-dialog">取消</button>
+          <button id="save-rig-button" type="button" class="confirm-button">确认线组</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="bait-dialog" class="screen-layer" aria-label="更换饵料界面">
+      <div class="dialog-card bait-card">
+        <div class="dialog-heading">
+          <div>
+            <h2>选择饵料</h2>
+            <p>饵料将影响目标鱼、鱼层和鱼口速度。</p>
+          </div>
+          <button type="button" data-close-dialog="bait-dialog" class="close-button">×</button>
+        </div>
+        <div id="bait-grid" class="bait-grid"></div>
+        <div class="dialog-footer">
+          <button type="button" data-close-dialog="bait-dialog">取消</button>
+          <button id="save-bait-button" type="button" class="confirm-button">确认饵料</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="result-dialog" class="screen-layer" aria-label="渔获结果">
+      <div class="dialog-card result-card">
+        <div class="catch-icon">鱼</div>
+        <h2 id="catch-title">鲫鱼</h2>
+        <p id="catch-detail">0.42 kg · 23 cm</p>
+        <div class="catch-stats">
+          <div><span>提竿时机</span><strong id="timing-result">准确</strong></div>
+          <div><span>使用饵料</span><strong id="result-bait">蚯蚓</strong></div>
+        </div>
+        <button id="continue-button" type="button" class="confirm-button">继续垂钓</button>
+      </div>
+    </section>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="./tai_fishing_game_v0.1.0.js"></script>
+</body>
+</html>
