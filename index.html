@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#13251d" />
-  <title>台钓网页游戏 v0.1.1</title>
-  <link rel="stylesheet" href="./tai_fishing_game_v0.1.1.css" />
+  <title>台钓网页游戏 v0.1.3</title>
+  <link rel="stylesheet" href="./tai_fishing_game_v0.1.3.css" />
 </head>
 <body>
   <main id="game-shell" data-state="BOOT">
@@ -16,7 +16,7 @@
         <h1>台钓网页游戏</h1>
         <p>正在搭建钓场……</p>
         <div class="loading-track"><span id="loading-progress"></span></div>
-        <small>v0.1.1 · 核心玩法原型</small>
+        <small>v0.1.3 · 渔获弹窗与咬口逻辑升级</small>
       </div>
     </section>
 
@@ -28,7 +28,7 @@
       </div>
       <div class="top-right">
         <span id="game-state-label">准备钓鱼</span>
-        <span class="version-badge">v0.1.1</span>
+        <span class="version-badge">v0.1.3</span>
       </div>
     </header>
 
@@ -184,12 +184,24 @@
 
     <section id="result-dialog" class="screen-layer" aria-label="渔获结果">
       <div class="dialog-card result-card">
-        <div class="catch-icon">鱼</div>
+        <div class="catch-photo-wrap">
+          <img id="catch-image" class="catch-photo" src="./assets/fish/crucian_carp.webp" alt="渔获图片" />
+        </div>
+        <div class="catch-badges">
+          <span id="result-grade-badge" class="catch-badge accent">不错</span>
+          <span id="result-method-badge" class="catch-badge">提鱼上岸</span>
+          <span id="result-pattern-badge" class="catch-badge soft">顿口</span>
+        </div>
         <h2 id="catch-title">鲫鱼</h2>
         <p id="catch-detail">0.42 kg · 23 cm</p>
-        <div class="catch-stats">
+        <p id="catch-summary" class="catch-summary">轻量小鱼，适合直接提鱼上岸。</p>
+        <div class="catch-stats catch-stats-3">
           <div><span>提竿时机</span><strong id="timing-result">准确</strong></div>
           <div><span>使用饵料</span><strong id="result-bait">蚯蚓</strong></div>
+          <div><span>钓层状态</span><strong id="result-layer">离底 20 cm</strong></div>
+          <div><span>咬口漂相</span><strong id="result-pattern">顿口</strong></div>
+          <div><span>上岸方式</span><strong id="result-method">提鱼上岸</strong></div>
+          <div><span>鱼种习性</span><strong id="result-note">底层觅食</strong></div>
         </div>
         <button id="continue-button" type="button" class="confirm-button">继续垂钓</button>
       </div>
@@ -199,6 +211,6 @@
   </main>
 
   <script src="https://cdn.babylonjs.com/babylon.js"></script>
-  <script src="./tai_fishing_game_v0.1.1.js"></script>
+  <script src="./tai_fishing_game_v0.1.3.js"></script>
 </body>
 </html>
