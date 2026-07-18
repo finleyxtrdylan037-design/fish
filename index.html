@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#13251d" />
-  <title>台钓网页游戏 v0.1.0</title>
-  <link rel="stylesheet" href="./tai_fishing_game_v0.1.0.css" />
+  <title>台钓网页游戏 v0.1.1</title>
+  <link rel="stylesheet" href="./tai_fishing_game_v0.1.1.css" />
 </head>
 <body>
   <main id="game-shell" data-state="BOOT">
@@ -16,7 +16,7 @@
         <h1>台钓网页游戏</h1>
         <p>正在搭建钓场……</p>
         <div class="loading-track"><span id="loading-progress"></span></div>
-        <small>v0.1.0 · 核心玩法原型</small>
+        <small>v0.1.1 · 核心玩法原型</small>
       </div>
     </section>
 
@@ -28,7 +28,7 @@
       </div>
       <div class="top-right">
         <span id="game-state-label">准备钓鱼</span>
-        <span class="version-badge">v0.1.0</span>
+        <span class="version-badge">v0.1.1</span>
       </div>
     </header>
 
@@ -98,11 +98,12 @@
       <div class="fight-info">
         <span>距离岸边</span><strong id="fish-distance-label">7.0 m</strong>
       </div>
+      <p id="fight-guidance" class="fight-guidance" aria-live="polite">先消耗鱼的体力，再将鱼带到岸边。</p>
       <div class="fight-buttons">
         <button type="button" data-fight="left">向左控鱼</button>
         <button type="button" data-fight="lift">抬竿施压</button>
         <button type="button" data-fight="lower">顺势卸力</button>
-        <button id="net-button" type="button" disabled>使用抄网</button>
+        <button id="net-button" type="button" disabled>抄网（需≤1.8m）</button>
       </div>
     </section>
 
@@ -198,6 +199,6 @@
   </main>
 
   <script src="https://cdn.babylonjs.com/babylon.js"></script>
-  <script src="./tai_fishing_game_v0.1.0.js"></script>
+  <script src="./tai_fishing_game_v0.1.1.js"></script>
 </body>
 </html>
