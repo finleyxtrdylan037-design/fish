@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#13251d" />
-  <title>台钓网页游戏 v0.2.3</title>
-  <link rel="stylesheet" href="./tai_fishing_game_v0.2.3.css" />
+  <title>台钓网页游戏 v0.3.0</title>
+  <link rel="stylesheet" href="./tai_fishing_game_v0.3.0.css" />
 </head>
 <body>
 <main id="game-shell" data-state="BOOT">
@@ -15,13 +15,13 @@
     <div class="dialog-card loading-card">
       <h1>台钓网页游戏</h1><p>正在加载真实钓场……</p>
       <div class="loading-track"><span id="loading-progress"></span></div>
-      <small>v0.2.3 · 鱼竿与钓场升级</small>
+      <small>v0.3.0 · 鱼竿与钓场升级</small>
     </div>
   </section>
 
   <header class="top-hud hud-panel">
-    <div class="top-left"><strong>青竹混养池</strong><span>3号钓位</span><span>晴 · 微风</span></div>
-    <div class="top-right"><span id="game-state-label">准备钓鱼</span><span class="version-badge">v0.2.3</span></div>
+    <div class="top-left"><button id="spot-button" type="button" class="spot-switch-button"><strong id="spot-name-label">青竹混养池</strong><span aria-hidden="true">⌄</span></button><span>3号钓位</span><span>晴 · 微风</span></div>
+    <div class="top-right"><span id="game-state-label">准备钓鱼</span><span class="version-badge">v0.3.0</span></div>
   </header>
 
   <aside class="metrics-panel hud-panel">
@@ -52,7 +52,7 @@
 
   <section class="action-panel">
     <button id="primary-action" type="button" class="primary-action">抛竿</button>
-    <div class="secondary-actions"><button id="rig-button" type="button">调漂</button><button id="bait-button" type="button">换饵</button><button id="retrieve-button" type="button">收竿</button></div>
+    <div class="secondary-actions"><button id="fish-keeper-button" type="button">鱼护</button><button id="rig-button" type="button">调漂</button><button id="bait-button" type="button">换饵</button><button id="retrieve-button" type="button">收竿</button></div>
     <button id="test-bite-button" type="button" class="developer-button" disabled>测试鱼口</button>
   </section>
 
@@ -105,6 +105,34 @@
     </div>
   </section>
 
+
+  <section id="fish-keeper-dialog" class="screen-layer" aria-label="鱼护统计">
+    <div class="dialog-card keeper-card">
+      <div class="dialog-heading"><div><h2>鱼护</h2><p>统计本次垂钓已经入护的全部渔获。</p></div><button type="button" data-close-dialog="fish-keeper-dialog" class="close-button">×</button></div>
+      <div class="keeper-summary-grid">
+        <div><span>总重量</span><strong id="keeper-total-weight">0.00 kg</strong></div>
+        <div><span>总尾数</span><strong id="keeper-total-count">0 尾</strong></div>
+        <div><span>最重单尾</span><strong id="keeper-heaviest">暂无</strong></div>
+        <div><span>本次钓鱼时间</span><strong id="keeper-duration">00:00:00</strong></div>
+      </div>
+      <div class="keeper-table-wrap">
+        <table class="keeper-table">
+          <thead><tr><th>鱼种</th><th>数量</th><th>合计重量</th><th>最重单尾</th></tr></thead>
+          <tbody id="keeper-table-body"><tr class="keeper-empty"><td colspan="4">鱼护还是空的</td></tr></tbody>
+        </table>
+      </div>
+      <div class="dialog-footer"><button type="button" data-close-dialog="fish-keeper-dialog" class="confirm-button">关闭</button></div>
+    </div>
+  </section>
+
+  <section id="spot-dialog" class="screen-layer" aria-label="选择钓场">
+    <div class="dialog-card spot-card">
+      <div class="dialog-heading"><div><h2>选择钓场</h2><p>切换钓场会更换远景，鱼护统计不会清空。</p></div><button type="button" data-close-dialog="spot-dialog" class="close-button">×</button></div>
+      <div id="spot-grid" class="spot-grid"></div>
+      <div class="dialog-footer"><button type="button" data-close-dialog="spot-dialog">取消</button></div>
+    </div>
+  </section>
+
   <section id="result-dialog" class="screen-layer">
     <div class="dialog-card result-card">
       <div class="catch-photo-wrap"><img id="catch-image" class="catch-photo" src="./assets/fish/crucian_carp.webp" alt="渔获图片" /></div>
@@ -121,5 +149,5 @@
   <div id="toast" role="status" aria-live="polite"></div>
 </main>
 <script src="./vendor/babylon.js"></script>
-<script src="./tai_fishing_game_v0.2.3.js"></script>
+<script src="./tai_fishing_game_v0.3.0.js"></script>
 </body></html>
