@@ -1,0 +1,299 @@
+{
+  "version": "0.3.9",
+  "entry": "index.html",
+  "probabilityDataUnchanged": true,
+  "fishAssets": [
+    {
+      "file": "bighead_carp.webp",
+      "sha256": "82b9a8171de6f4c47dcd2f2c8d62904c0c9893709339f4f34d26de851c561eb4",
+      "unchanged": true
+    },
+    {
+      "file": "black_carp.webp",
+      "sha256": "2a61858911d815ff2ed92aad5598e9269decc16294b71a260c69d32056a00c6c",
+      "unchanged": true
+    },
+    {
+      "file": "common_carp.webp",
+      "sha256": "93cf235baf9c7b69895a65d735a8e3dc93a81e22a8f1e44971350901406ae2b7",
+      "unchanged": true
+    },
+    {
+      "file": "crucian_carp.webp",
+      "sha256": "2a7105d5c5c5775115c490cb552d8f65d72e893135cc40a8e627956b52a49e2a",
+      "unchanged": true
+    },
+    {
+      "file": "grass_carp.webp",
+      "sha256": "5de7daefa8e55873d34f8fbd65527d83b912c0c4650b4af9b42929804972e4b9",
+      "unchanged": true
+    },
+    {
+      "file": "silver_carp.webp",
+      "sha256": "cd2e8b4f0812d3642d7884c9650af831d170ff5246f0b35d625a6c7c57cdd8ce",
+      "unchanged": true
+    },
+    {
+      "file": "tilapia.webp",
+      "sha256": "bc0d6ddbe5422879703f13b5428c2d7f0df063483be21d702aea9dd7c3da9ce3",
+      "unchanged": true
+    },
+    {
+      "file": "topmouth_culter.webp",
+      "sha256": "ec50dde74eaabd126216ef029f1e876070eadbc3597309e3075c4413807e5d92",
+      "unchanged": true
+    },
+    {
+      "file": "wuchang_bream.webp",
+      "sha256": "7fb08cc936ae7a6487ec151c3e60092fb57be0a70b496798df31cdd2c86a23ce",
+      "unchanged": true
+    }
+  ],
+  "files": [
+    {
+      "path": "CHANGELOG_v0.3.9.md",
+      "size": 2166,
+      "sha256": "052463bb4395c6729f4cdfb3e18eefddd99880311d7c4f10bcf125ace94df0a5"
+    },
+    {
+      "path": "README_v0.3.9.md",
+      "size": 481,
+      "sha256": "824e4f24e2b775ea1cf96cede7ade0aa0381947e2217253681ff441ac5ccf630"
+    },
+    {
+      "path": "TEST_REPORT_v0.3.9.md",
+      "size": 1983,
+      "sha256": "b872c1553674844ea26266720c0896d8b95f6ee7ccdb480671414a8a17dc2b94"
+    },
+    {
+      "path": "assets/fight_fish/bighead_carp.png",
+      "size": 27181,
+      "sha256": "d067f7426c55eafb9d3f5f9fa99b9e411b51b757df6b0d5a5e92f07b81247800"
+    },
+    {
+      "path": "assets/fight_fish/black_carp.png",
+      "size": 22852,
+      "sha256": "76d4af4436a0405eaf3a0c0b1ab8bcac1899cbc5ed6412547de44d1a1ba789c3"
+    },
+    {
+      "path": "assets/fight_fish/common_carp.png",
+      "size": 31816,
+      "sha256": "27b98a892b0070b5cb6baf0ff0ec84ba8b56c30955c23f846bab12e5a9c6be7a"
+    },
+    {
+      "path": "assets/fight_fish/crucian_carp.png",
+      "size": 34974,
+      "sha256": "c79e535bbeae1a1da304af0f57f7ab1df85ac3552b85cac96bd2eb74104ac5d9"
+    },
+    {
+      "path": "assets/fight_fish/grass_carp.png",
+      "size": 26128,
+      "sha256": "9978bdc559fdae8651b2fea3fb8d0c7e237158ea8c9e5ff19963391aa187a08a"
+    },
+    {
+      "path": "assets/fight_fish/silver_carp.png",
+      "size": 25465,
+      "sha256": "01439facf85bbee23a8eb99645c4b496a934c2ffd677a89b59835833a5294296"
+    },
+    {
+      "path": "assets/fight_fish/tilapia.png",
+      "size": 37623,
+      "sha256": "3a6eb2b7af5ad933be278018176775a0743e5f378924a1c0b3ae4f6cd0c21cad"
+    },
+    {
+      "path": "assets/fight_fish/topmouth_culter.png",
+      "size": 19957,
+      "sha256": "5f652eb52dad01be20acc4c41b74ed623ecdd3afcdb891b2d98289b830c14883"
+    },
+    {
+      "path": "assets/fight_fish/wuchang_bream.png",
+      "size": 30458,
+      "sha256": "619b6b78cd26d42b89550f0c8fb407468ecf534429e0396c390aa1d51aefe389"
+    },
+    {
+      "path": "assets/fish/bighead_carp.webp",
+      "size": 2624,
+      "sha256": "82b9a8171de6f4c47dcd2f2c8d62904c0c9893709339f4f34d26de851c561eb4"
+    },
+    {
+      "path": "assets/fish/black_carp.webp",
+      "size": 2420,
+      "sha256": "2a61858911d815ff2ed92aad5598e9269decc16294b71a260c69d32056a00c6c"
+    },
+    {
+      "path": "assets/fish/common_carp.webp",
+      "size": 3782,
+      "sha256": "93cf235baf9c7b69895a65d735a8e3dc93a81e22a8f1e44971350901406ae2b7"
+    },
+    {
+      "path": "assets/fish/crucian_carp.webp",
+      "size": 3628,
+      "sha256": "2a7105d5c5c5775115c490cb552d8f65d72e893135cc40a8e627956b52a49e2a"
+    },
+    {
+      "path": "assets/fish/grass_carp.webp",
+      "size": 2574,
+      "sha256": "5de7daefa8e55873d34f8fbd65527d83b912c0c4650b4af9b42929804972e4b9"
+    },
+    {
+      "path": "assets/fish/silver_carp.webp",
+      "size": 2172,
+      "sha256": "cd2e8b4f0812d3642d7884c9650af831d170ff5246f0b35d625a6c7c57cdd8ce"
+    },
+    {
+      "path": "assets/fish/tilapia.webp",
+      "size": 4078,
+      "sha256": "bc0d6ddbe5422879703f13b5428c2d7f0df063483be21d702aea9dd7c3da9ce3"
+    },
+    {
+      "path": "assets/fish/topmouth_culter.webp",
+      "size": 1962,
+      "sha256": "ec50dde74eaabd126216ef029f1e876070eadbc3597309e3075c4413807e5d92"
+    },
+    {
+      "path": "assets/fish/wuchang_bream.webp",
+      "size": 3256,
+      "sha256": "7fb08cc936ae7a6487ec151c3e60092fb57be0a70b496798df31cdd2c86a23ce"
+    },
+    {
+      "path": "assets/rods/rod_tianyuan_forward.png",
+      "size": 365276,
+      "sha256": "c0882308d0e81de38dbc5e788ca7e426d1590faa4fa4bf53b9c136bc8b4f7242"
+    },
+    {
+      "path": "assets/rods/rod_tianyuan_side.png",
+      "size": 438908,
+      "sha256": "67b92fec5e667468b8e31d2269801b898538affb87983f1b85a67f53ac361ce7"
+    },
+    {
+      "path": "assets/scenery/spot_01_qingzhu.png",
+      "size": 2208516,
+      "sha256": "27dd00502d4406d34251059aae9bdfa60292e58108495d9715e5f14b2b835275"
+    },
+    {
+      "path": "assets/scenery/spot_02_reservoir.png",
+      "size": 2325852,
+      "sha256": "24d85e1d93c7280acfa17d461da34473a9d9e6a4bdb0df41acb2f0e33fb0c913"
+    },
+    {
+      "path": "assets/scenery/spot_03_willow.png",
+      "size": 2541259,
+      "sha256": "34960d8f3a6f82e5331d6aab63d77914899cbfa086d1cc84f7c3c068d24bcf7b"
+    },
+    {
+      "path": "assets/scenery/spot_04_blackpit.png",
+      "size": 2053015,
+      "sha256": "3905d5b521df0ce68e53d9d1028559db73d2a45502d4807a48f09c4f9a82f19f"
+    },
+    {
+      "path": "assets/scenery/spot_05_reed.png",
+      "size": 2737950,
+      "sha256": "b4c78749b38728a04c00f32e4ab567759990a59af2025623f1224f586198b322"
+    },
+    {
+      "path": "assets/ui/float_real.png",
+      "size": 103846,
+      "sha256": "25f0ec581d2914b0848e9253cab2a4c141fb272048c33adc09070c6491c7d746"
+    },
+    {
+      "path": "assets/ui/float_tip.png",
+      "size": 26604,
+      "sha256": "061991f853da09b5a9a4c845c3084ce89b1967a24ff8c728bf0975635a05ff8e"
+    },
+    {
+      "path": "bait_depth_fish_probability_v0.3.9.json",
+      "size": 11298,
+      "sha256": "9e75e9591b84cb9ffe2d5d3958e7980f8aa3bbcf19b6a89e50b51cf0a32020ef"
+    },
+    {
+      "path": "bait_depth_fish_probability_v0.3.9.md",
+      "size": 4203,
+      "sha256": "96d9b6607aaf38df751390272d55f8360fd6f38ff7f594be6edc33b41a09ce33"
+    },
+    {
+      "path": "index.html",
+      "size": 10705,
+      "sha256": "8057fc15be3665ae8fe28d540ea4594cab3dd7114ef384b15e1543d9faac91dd"
+    },
+    {
+      "path": "tai_fishing_game_v0.3.9.css",
+      "size": 20309,
+      "sha256": "5b33c28b52964ca9607fc6d759723ee1578a05adcfae52b3c8bb4fdc29e5c2eb"
+    },
+    {
+      "path": "tai_fishing_game_v0.3.9.html",
+      "size": 10705,
+      "sha256": "8057fc15be3665ae8fe28d540ea4594cab3dd7114ef384b15e1543d9faac91dd"
+    },
+    {
+      "path": "tai_fishing_game_v0.3.9.js",
+      "size": 73841,
+      "sha256": "22d43e27d8286e23cf69262c74160adb05158a980aa451be2f849367bf2ed215"
+    },
+    {
+      "path": "tests/final_mobile_test/android_01_ready_7_2.png",
+      "size": 1274655,
+      "sha256": "15a4ad706226d110d922bac90bc3a64b5f2a4452ce6448a5b4ffa9318deabaea"
+    },
+    {
+      "path": "tests/final_mobile_test/android_02_bait_offbottom.png",
+      "size": 256588,
+      "sha256": "6cd269c13e8292cc454528afc495a971d66f49e47f6a95b91b5227155b7e16b2"
+    },
+    {
+      "path": "tests/final_mobile_test/android_03_bait_upper.png",
+      "size": 259465,
+      "sha256": "b218539b85e0eaa3698c51375ceaa83a3b75ca28aa0cdaa4bbc054c9db5e8ff6"
+    },
+    {
+      "path": "tests/final_mobile_test/android_04_wait_forward.png",
+      "size": 1290100,
+      "sha256": "03450b134c7dceef8bb6bf71ac9a3347af18d19c8d265f31c70e37452efb238b"
+    },
+    {
+      "path": "tests/final_mobile_test/android_05_fight_1kg.png",
+      "size": 1237160,
+      "sha256": "cd58b61704d9407785fe4febd3701c51701dacb893a15508a3ef52024cc1a38b"
+    },
+    {
+      "path": "tests/final_mobile_test/android_06_fight_10kg_peak.png",
+      "size": 1235624,
+      "sha256": "9947fd3577f55e701a6c986b35ee5c10cf0803de91e2a1c2cc9114c58cbeab99"
+    },
+    {
+      "path": "tests/final_mobile_test/browser_report.json",
+      "size": 17655,
+      "sha256": "c3eda47c32383e7a250455915c2a19c686ac4dc126832cca3cdd191c22466bec"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_01_ready_7_2.png",
+      "size": 1324629,
+      "sha256": "6dc7315f407f81e1dd4305de7b28ab89bb88692d388681c3351faf41e789a756"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_02_bait_offbottom.png",
+      "size": 251455,
+      "sha256": "6182de102cc081b238ae2feeb38407631b46e067ad05e4f6f0957869fb49f448"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_03_bait_upper.png",
+      "size": 249795,
+      "sha256": "fc37bb93f972375f3a65ca396612e0a87e3d4508279683f05acd412dd6112300"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_04_wait_forward.png",
+      "size": 1341293,
+      "sha256": "e35e17eb7f197674a0e41887451976dc7d16f1a3c8b688cdc2cea0b0ae27972f"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_05_fight_1kg.png",
+      "size": 1302775,
+      "sha256": "ce9fc2402becf7bd87684e03908b0c76f36f78a9f0e402aad8d0a925aedc8064"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_06_fight_10kg_peak.png",
+      "size": 1302523,
+      "sha256": "500664dff1d1de58445837219ca796fa68056a2d854f173c4b72f8edf8a0ec98"
+    }
+  ]
+}
