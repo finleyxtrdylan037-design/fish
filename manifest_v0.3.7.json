@@ -1,0 +1,236 @@
+{
+  "version": "0.3.7",
+  "entry": "index.html",
+  "files": [
+    {
+      "path": "CHANGELOG_v0.3.7.md",
+      "size": 2387,
+      "sha256": "63fac036634eb51a070ae21ae8c49bfe5ead3ccd7ab094b281309e0f4aba93a6"
+    },
+    {
+      "path": "README_v0.3.7.md",
+      "size": 272,
+      "sha256": "76ce6623fce87051a70f281654306b4d71db2df9a8bf330f254b4c7891044867"
+    },
+    {
+      "path": "TEST_REPORT_v0.3.7.md",
+      "size": 1540,
+      "sha256": "6c004d0fcc24bae0ab9d53105832ed0f42f22e0a8599402ab95891f995614151"
+    },
+    {
+      "path": "assets/fish/bighead_carp.webp",
+      "size": 2624,
+      "sha256": "82b9a8171de6f4c47dcd2f2c8d62904c0c9893709339f4f34d26de851c561eb4"
+    },
+    {
+      "path": "assets/fish/black_carp.webp",
+      "size": 2420,
+      "sha256": "2a61858911d815ff2ed92aad5598e9269decc16294b71a260c69d32056a00c6c"
+    },
+    {
+      "path": "assets/fish/common_carp.webp",
+      "size": 3782,
+      "sha256": "93cf235baf9c7b69895a65d735a8e3dc93a81e22a8f1e44971350901406ae2b7"
+    },
+    {
+      "path": "assets/fish/crucian_carp.webp",
+      "size": 3628,
+      "sha256": "2a7105d5c5c5775115c490cb552d8f65d72e893135cc40a8e627956b52a49e2a"
+    },
+    {
+      "path": "assets/fish/grass_carp.webp",
+      "size": 2574,
+      "sha256": "5de7daefa8e55873d34f8fbd65527d83b912c0c4650b4af9b42929804972e4b9"
+    },
+    {
+      "path": "assets/fish/silver_carp.webp",
+      "size": 2172,
+      "sha256": "cd2e8b4f0812d3642d7884c9650af831d170ff5246f0b35d625a6c7c57cdd8ce"
+    },
+    {
+      "path": "assets/fish/tilapia.webp",
+      "size": 4078,
+      "sha256": "bc0d6ddbe5422879703f13b5428c2d7f0df063483be21d702aea9dd7c3da9ce3"
+    },
+    {
+      "path": "assets/fish/topmouth_culter.webp",
+      "size": 1962,
+      "sha256": "ec50dde74eaabd126216ef029f1e876070eadbc3597309e3075c4413807e5d92"
+    },
+    {
+      "path": "assets/fish/wuchang_bream.webp",
+      "size": 3256,
+      "sha256": "7fb08cc936ae7a6487ec151c3e60092fb57be0a70b496798df31cdd2c86a23ce"
+    },
+    {
+      "path": "assets/rods/rod_3_6m.png",
+      "size": 5531,
+      "sha256": "7f1442e02ed523b7782efc2e980ba1236fa3d130d6193e9f460f528117196a7a"
+    },
+    {
+      "path": "assets/rods/rod_4_5m.png",
+      "size": 5524,
+      "sha256": "3cbdec0982ecc8545180f74e1239b843220d4018f37886ad69edf3177dfe8a22"
+    },
+    {
+      "path": "assets/rods/rod_6_3m.png",
+      "size": 5565,
+      "sha256": "974a3b0fcf936181d8409b838f857b15f86a68ecd33c5bfd3ec4885d4e764744"
+    },
+    {
+      "path": "assets/rods/rod_7_2m.png",
+      "size": 5577,
+      "sha256": "e75fbf948cad8e690b6bc89a3afb9ab04957fe1516e7e5fa20939bfe78e8e18b"
+    },
+    {
+      "path": "assets/scenery/spot_01_qingzhu.png",
+      "size": 2208516,
+      "sha256": "27dd00502d4406d34251059aae9bdfa60292e58108495d9715e5f14b2b835275"
+    },
+    {
+      "path": "assets/scenery/spot_02_reservoir.png",
+      "size": 2325852,
+      "sha256": "24d85e1d93c7280acfa17d461da34473a9d9e6a4bdb0df41acb2f0e33fb0c913"
+    },
+    {
+      "path": "assets/scenery/spot_03_willow.png",
+      "size": 2541259,
+      "sha256": "34960d8f3a6f82e5331d6aab63d77914899cbfa086d1cc84f7c3c068d24bcf7b"
+    },
+    {
+      "path": "assets/scenery/spot_04_blackpit.png",
+      "size": 2053015,
+      "sha256": "3905d5b521df0ce68e53d9d1028559db73d2a45502d4807a48f09c4f9a82f19f"
+    },
+    {
+      "path": "assets/scenery/spot_05_reed.png",
+      "size": 2737950,
+      "sha256": "b4c78749b38728a04c00f32e4ab567759990a59af2025623f1224f586198b322"
+    },
+    {
+      "path": "assets/ui/float_real.png",
+      "size": 103846,
+      "sha256": "25f0ec581d2914b0848e9253cab2a4c141fb272048c33adc09070c6491c7d746"
+    },
+    {
+      "path": "assets/ui/float_tip.png",
+      "size": 26604,
+      "sha256": "061991f853da09b5a9a4c845c3084ce89b1967a24ff8c728bf0975635a05ff8e"
+    },
+    {
+      "path": "bait_depth_fish_probability_v0.3.7.json",
+      "size": 11298,
+      "sha256": "22fbbf67af912a8b8a30b6f8784839e346ed1f9ef6a68fb6dea242b843ac0079"
+    },
+    {
+      "path": "bait_depth_fish_probability_v0.3.7.md",
+      "size": 4203,
+      "sha256": "f3dd1698fc5903ca5212682c896a97089ed7a5c85758887a4c736aabc168b55a"
+    },
+    {
+      "path": "index.html",
+      "size": 10693,
+      "sha256": "32a83c5b620a7e8ad9c05cdb7b493118e350810144454f138cf0c6322d063b43"
+    },
+    {
+      "path": "tai_fishing_game_v0.3.7.css",
+      "size": 18381,
+      "sha256": "6bf38b491535c36d6e9258f3aa17193a96de8c6997359203d896f5cf2a91947c"
+    },
+    {
+      "path": "tai_fishing_game_v0.3.7.html",
+      "size": 10693,
+      "sha256": "32a83c5b620a7e8ad9c05cdb7b493118e350810144454f138cf0c6322d063b43"
+    },
+    {
+      "path": "tai_fishing_game_v0.3.7.js",
+      "size": 67133,
+      "sha256": "bceec1e2728c64d40fcd1067dec74e7789d01921fc0f4165f363a4aa71d5b070"
+    },
+    {
+      "path": "tests/final_mobile_test/android_01_ready_7_2.png",
+      "size": 1319508,
+      "sha256": "22619d1224fa80c25bccf2420c8ab003d1eac30f2933c650858452f9055cc210"
+    },
+    {
+      "path": "tests/final_mobile_test/android_03_wait_7_2.png",
+      "size": 1310538,
+      "sha256": "9bae7005858b358f9ed35b39bcbf2b17b551329b896c8b98d76d38285b259c40"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_01_ready.png",
+      "size": 1367033,
+      "sha256": "2fb45cd3715e55e742bc1ea27b59e12649f89707dfffc95e415be41daca39c07"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_02_charging.png",
+      "size": 1217956,
+      "sha256": "a4d875554795e8ad6c1f362ff1560158467a4eb1232a14e0353a1117b0bcaf71"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_03_flight_early.png",
+      "size": 1395480,
+      "sha256": "3450bc1b26471459733fa56e34565ce00db51da228cadc9bea82bd14992d2030"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_04_flight_mid.png",
+      "size": 1389817,
+      "sha256": "8a5c7421d25092d32427804d1a1eff453a735420a349f4d0216cd68675186e30"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_05_wait_4marks.png",
+      "size": 1365321,
+      "sha256": "316717480a018c5f4a397aea24ae602d4934f702dbe6545a739f1cebbb44837d"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_06_result_fish.webp.png",
+      "size": 333491,
+      "sha256": "ee9e84e9a51a2457eab8ab76292963bdf3c931b1214b8459dd096d97ad64dd80"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_07_wait_5marks.png",
+      "size": 1367943,
+      "sha256": "61717633be5039aa773114b97f63e85f835cfe3b71f2cbb28f07500b093d8502"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_rod_3_6_max.png",
+      "size": 1365390,
+      "sha256": "2b57c544472c65d1919c0a719b95c8ea30ed0d5f68a6c094496962ffa561956d"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_rod_4_5_max.png",
+      "size": 1368522,
+      "sha256": "1f63ddb13ca6b4d47084aee70012b7a456bdac8605554e91ef81662ded79ca19"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_rod_6_3_max.png",
+      "size": 1370427,
+      "sha256": "11229585e7df2fc0ad5c94c31b255ffe773def8634d03b309813566f0e605c3f"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_rod_7_2_max.png",
+      "size": 1373091,
+      "sha256": "cde3f30b353ce3afc8eba09e867bbcbf05316ebf7bd54c5e437cbf7939bb15d7"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_zone_100_flight.png",
+      "size": 1368165,
+      "sha256": "e6997d94727110ebe6fc9f2dee5d94de6980cd43d3b9932eedf0a802feaf0c00"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_zone_50_flight.png",
+      "size": 1366074,
+      "sha256": "671081d79fca2b480e1fe46c038b3b13d7e22366e1792341190b3773d9c36039"
+    },
+    {
+      "path": "tests/final_mobile_test/iphone_zone_5_flight.png",
+      "size": 1365585,
+      "sha256": "f237b1a7640efdc451defb94930884a0135bda150375ae143c626454700f9837"
+    },
+    {
+      "path": "tests/final_mobile_test/report.json",
+      "size": 9080,
+      "sha256": "79da4a94671e590052f6558be8dad325b30d56e033b7436f59c633eba52374c7"
+    }
+  ]
+}
