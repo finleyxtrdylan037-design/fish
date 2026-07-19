@@ -1,0 +1,431 @@
+{
+  "version": "0.3.10",
+  "description": "台钓网页游戏 v0.3.10 出鱼概率配置。每个饵料×钓层组合内鱼种概率合计为100%。",
+  "notes": [
+    "这是游戏平衡参数，不代表自然水域的科学统计概率。",
+    "实际等待时间还会乘以饵料 bite_delay_multiplier。",
+    "过底在鱼种概率上按钓底计算，但浮漂显示5目。"
+  ],
+  "rod_lengths_m": [
+    3.6,
+    4.5,
+    6.3,
+    7.2
+  ],
+  "max_cast_rule": "鱼竿长度×2；最大为7.2m×2=14.4m",
+  "layers": {
+    "bottom": {
+      "name": "钓底",
+      "rule": "距底≤10cm或过底"
+    },
+    "off_bottom": {
+      "name": "离底",
+      "rule": "距底10–45cm"
+    },
+    "mid": {
+      "name": "中层",
+      "rule": "钩饵深度约0.7–1.95m"
+    },
+    "upper": {
+      "name": "上层",
+      "rule": "钩饵深度≤0.7m"
+    }
+  },
+  "fishes": [
+    {
+      "key": "crucian_carp",
+      "name": "鲫鱼"
+    },
+    {
+      "key": "common_carp",
+      "name": "鲤鱼"
+    },
+    {
+      "key": "wuchang_bream",
+      "name": "鳊鱼"
+    },
+    {
+      "key": "silver_carp",
+      "name": "鲢鱼"
+    },
+    {
+      "key": "bighead_carp",
+      "name": "鳙鱼"
+    },
+    {
+      "key": "grass_carp",
+      "name": "草鱼"
+    },
+    {
+      "key": "tilapia",
+      "name": "罗非鱼"
+    },
+    {
+      "key": "topmouth_culter",
+      "name": "翘嘴"
+    },
+    {
+      "key": "black_carp",
+      "name": "青鱼"
+    }
+  ],
+  "baits": {
+    "worm": {
+      "name": "蚯蚓",
+      "description": "底层通用，鲫鱼和鲤鱼概率较高",
+      "bite_delay_multiplier": 1.0,
+      "probabilities": {
+        "bottom": {
+          "crucian_carp": 40.0,
+          "common_carp": 25.0,
+          "wuchang_bream": 8.0,
+          "silver_carp": 1.0,
+          "bighead_carp": 1.0,
+          "grass_carp": 5.0,
+          "tilapia": 12.0,
+          "topmouth_culter": 3.0,
+          "black_carp": 5.0
+        },
+        "off_bottom": {
+          "crucian_carp": 32.0,
+          "common_carp": 18.0,
+          "wuchang_bream": 15.0,
+          "silver_carp": 3.0,
+          "bighead_carp": 2.0,
+          "grass_carp": 8.0,
+          "tilapia": 12.0,
+          "topmouth_culter": 8.0,
+          "black_carp": 2.0
+        },
+        "mid": {
+          "crucian_carp": 12.0,
+          "common_carp": 8.0,
+          "wuchang_bream": 20.0,
+          "silver_carp": 10.0,
+          "bighead_carp": 8.0,
+          "grass_carp": 8.0,
+          "tilapia": 10.0,
+          "topmouth_culter": 22.0,
+          "black_carp": 2.0
+        },
+        "upper": {
+          "crucian_carp": 5.0,
+          "common_carp": 3.0,
+          "wuchang_bream": 12.0,
+          "silver_carp": 15.0,
+          "bighead_carp": 12.0,
+          "grass_carp": 5.0,
+          "tilapia": 8.0,
+          "topmouth_culter": 38.0,
+          "black_carp": 2.0
+        }
+      }
+    },
+    "foam": {
+      "name": "泡泡球",
+      "description": "耐泡，鲫鲤鳊综合型",
+      "bite_delay_multiplier": 0.94,
+      "probabilities": {
+        "bottom": {
+          "crucian_carp": 35.0,
+          "common_carp": 30.0,
+          "wuchang_bream": 10.0,
+          "silver_carp": 1.0,
+          "bighead_carp": 1.0,
+          "grass_carp": 5.0,
+          "tilapia": 10.0,
+          "topmouth_culter": 3.0,
+          "black_carp": 5.0
+        },
+        "off_bottom": {
+          "crucian_carp": 30.0,
+          "common_carp": 22.0,
+          "wuchang_bream": 16.0,
+          "silver_carp": 3.0,
+          "bighead_carp": 2.0,
+          "grass_carp": 8.0,
+          "tilapia": 10.0,
+          "topmouth_culter": 7.0,
+          "black_carp": 2.0
+        },
+        "mid": {
+          "crucian_carp": 12.0,
+          "common_carp": 10.0,
+          "wuchang_bream": 24.0,
+          "silver_carp": 10.0,
+          "bighead_carp": 8.0,
+          "grass_carp": 8.0,
+          "tilapia": 8.0,
+          "topmouth_culter": 18.0,
+          "black_carp": 2.0
+        },
+        "upper": {
+          "crucian_carp": 5.0,
+          "common_carp": 4.0,
+          "wuchang_bream": 15.0,
+          "silver_carp": 17.0,
+          "bighead_carp": 14.0,
+          "grass_carp": 4.0,
+          "tilapia": 7.0,
+          "topmouth_culter": 32.0,
+          "black_carp": 2.0
+        }
+      }
+    },
+    "corn": {
+      "name": "玉米",
+      "description": "偏鲤鱼、草鱼；鲢鳙概率很低",
+      "bite_delay_multiplier": 0.84,
+      "probabilities": {
+        "bottom": {
+          "crucian_carp": 18.0,
+          "common_carp": 32.0,
+          "wuchang_bream": 10.0,
+          "silver_carp": 1.0,
+          "bighead_carp": 1.0,
+          "grass_carp": 22.0,
+          "tilapia": 3.0,
+          "topmouth_culter": 2.0,
+          "black_carp": 11.0
+        },
+        "off_bottom": {
+          "crucian_carp": 14.0,
+          "common_carp": 25.0,
+          "wuchang_bream": 18.0,
+          "silver_carp": 1.0,
+          "bighead_carp": 1.0,
+          "grass_carp": 27.0,
+          "tilapia": 3.0,
+          "topmouth_culter": 7.0,
+          "black_carp": 4.0
+        },
+        "mid": {
+          "crucian_carp": 8.0,
+          "common_carp": 12.0,
+          "wuchang_bream": 20.0,
+          "silver_carp": 3.0,
+          "bighead_carp": 2.0,
+          "grass_carp": 25.0,
+          "tilapia": 3.0,
+          "topmouth_culter": 24.0,
+          "black_carp": 3.0
+        },
+        "upper": {
+          "crucian_carp": 4.0,
+          "common_carp": 6.0,
+          "wuchang_bream": 15.0,
+          "silver_carp": 5.0,
+          "bighead_carp": 3.0,
+          "grass_carp": 13.0,
+          "tilapia": 2.0,
+          "topmouth_culter": 50.0,
+          "black_carp": 2.0
+        }
+      }
+    },
+    "tilapia_frozen": {
+      "name": "罗非冻饵",
+      "description": "明显提高罗非鱼概率",
+      "bite_delay_multiplier": 1.1,
+      "probabilities": {
+        "bottom": {
+          "crucian_carp": 18.0,
+          "common_carp": 8.0,
+          "wuchang_bream": 5.0,
+          "silver_carp": 1.0,
+          "bighead_carp": 1.0,
+          "grass_carp": 2.0,
+          "tilapia": 58.0,
+          "topmouth_culter": 5.0,
+          "black_carp": 2.0
+        },
+        "off_bottom": {
+          "crucian_carp": 15.0,
+          "common_carp": 7.0,
+          "wuchang_bream": 8.0,
+          "silver_carp": 2.0,
+          "bighead_carp": 1.0,
+          "grass_carp": 3.0,
+          "tilapia": 52.0,
+          "topmouth_culter": 11.0,
+          "black_carp": 1.0
+        },
+        "mid": {
+          "crucian_carp": 8.0,
+          "common_carp": 5.0,
+          "wuchang_bream": 12.0,
+          "silver_carp": 6.0,
+          "bighead_carp": 4.0,
+          "grass_carp": 4.0,
+          "tilapia": 40.0,
+          "topmouth_culter": 20.0,
+          "black_carp": 1.0
+        },
+        "upper": {
+          "crucian_carp": 4.0,
+          "common_carp": 3.0,
+          "wuchang_bream": 8.0,
+          "silver_carp": 8.0,
+          "bighead_carp": 5.0,
+          "grass_carp": 2.0,
+          "tilapia": 30.0,
+          "topmouth_culter": 39.0,
+          "black_carp": 1.0
+        }
+      }
+    },
+    "black_carp_pellet": {
+      "name": "青鱼颗粒",
+      "description": "明显提高青鱼和草鱼概率",
+      "bite_delay_multiplier": 0.8,
+      "probabilities": {
+        "bottom": {
+          "crucian_carp": 6.0,
+          "common_carp": 18.0,
+          "wuchang_bream": 5.0,
+          "silver_carp": 1.0,
+          "bighead_carp": 1.0,
+          "grass_carp": 28.0,
+          "tilapia": 2.0,
+          "topmouth_culter": 1.0,
+          "black_carp": 38.0
+        },
+        "off_bottom": {
+          "crucian_carp": 5.0,
+          "common_carp": 15.0,
+          "wuchang_bream": 8.0,
+          "silver_carp": 2.0,
+          "bighead_carp": 1.0,
+          "grass_carp": 34.0,
+          "tilapia": 2.0,
+          "topmouth_culter": 4.0,
+          "black_carp": 29.0
+        },
+        "mid": {
+          "crucian_carp": 4.0,
+          "common_carp": 8.0,
+          "wuchang_bream": 12.0,
+          "silver_carp": 5.0,
+          "bighead_carp": 3.0,
+          "grass_carp": 35.0,
+          "tilapia": 2.0,
+          "topmouth_culter": 22.0,
+          "black_carp": 9.0
+        },
+        "upper": {
+          "crucian_carp": 2.0,
+          "common_carp": 4.0,
+          "wuchang_bream": 8.0,
+          "silver_carp": 8.0,
+          "bighead_carp": 5.0,
+          "grass_carp": 20.0,
+          "tilapia": 1.0,
+          "topmouth_culter": 47.0,
+          "black_carp": 5.0
+        }
+      }
+    },
+    "powder": {
+      "name": "粉饵",
+      "description": "中上层显著提高鲢鱼、鳙鱼概率",
+      "bite_delay_multiplier": 1.18,
+      "probabilities": {
+        "bottom": {
+          "crucian_carp": 10.0,
+          "common_carp": 8.0,
+          "wuchang_bream": 6.0,
+          "silver_carp": 20.0,
+          "bighead_carp": 18.0,
+          "grass_carp": 4.0,
+          "tilapia": 5.0,
+          "topmouth_culter": 24.0,
+          "black_carp": 5.0
+        },
+        "off_bottom": {
+          "crucian_carp": 8.0,
+          "common_carp": 6.0,
+          "wuchang_bream": 10.0,
+          "silver_carp": 28.0,
+          "bighead_carp": 25.0,
+          "grass_carp": 5.0,
+          "tilapia": 4.0,
+          "topmouth_culter": 12.0,
+          "black_carp": 2.0
+        },
+        "mid": {
+          "crucian_carp": 4.0,
+          "common_carp": 3.0,
+          "wuchang_bream": 10.0,
+          "silver_carp": 34.0,
+          "bighead_carp": 32.0,
+          "grass_carp": 3.0,
+          "tilapia": 2.0,
+          "topmouth_culter": 11.0,
+          "black_carp": 1.0
+        },
+        "upper": {
+          "crucian_carp": 2.0,
+          "common_carp": 2.0,
+          "wuchang_bream": 8.0,
+          "silver_carp": 36.0,
+          "bighead_carp": 34.0,
+          "grass_carp": 2.0,
+          "tilapia": 2.0,
+          "topmouth_culter": 13.0,
+          "black_carp": 1.0
+        }
+      }
+    },
+    "mixed": {
+      "name": "混养饵料",
+      "description": "适用面广，概率较均衡",
+      "bite_delay_multiplier": 1.0,
+      "probabilities": {
+        "bottom": {
+          "crucian_carp": 26.0,
+          "common_carp": 24.0,
+          "wuchang_bream": 10.0,
+          "silver_carp": 4.0,
+          "bighead_carp": 3.0,
+          "grass_carp": 12.0,
+          "tilapia": 8.0,
+          "topmouth_culter": 5.0,
+          "black_carp": 8.0
+        },
+        "off_bottom": {
+          "crucian_carp": 22.0,
+          "common_carp": 18.0,
+          "wuchang_bream": 15.0,
+          "silver_carp": 8.0,
+          "bighead_carp": 6.0,
+          "grass_carp": 14.0,
+          "tilapia": 7.0,
+          "topmouth_culter": 8.0,
+          "black_carp": 2.0
+        },
+        "mid": {
+          "crucian_carp": 10.0,
+          "common_carp": 8.0,
+          "wuchang_bream": 18.0,
+          "silver_carp": 17.0,
+          "bighead_carp": 14.0,
+          "grass_carp": 10.0,
+          "tilapia": 6.0,
+          "topmouth_culter": 15.0,
+          "black_carp": 2.0
+        },
+        "upper": {
+          "crucian_carp": 5.0,
+          "common_carp": 4.0,
+          "wuchang_bream": 13.0,
+          "silver_carp": 22.0,
+          "bighead_carp": 18.0,
+          "grass_carp": 7.0,
+          "tilapia": 5.0,
+          "topmouth_culter": 24.0,
+          "black_carp": 2.0
+        }
+      }
+    }
+  }
+}
